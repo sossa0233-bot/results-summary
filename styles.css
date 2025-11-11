@@ -1,0 +1,213 @@
+:root {
+  /* Primary Colors */
+  --light-red: hsl(0, 100%, 67%);
+  --orangey-yellow: hsl(39, 100%, 56%);
+  --green-teal: hsl(166, 100%, 37%);
+  --cobalt-blue: hsl(234, 85%, 45%);
+
+  /* Gradients */
+  --gradient-bg-start: hsl(252, 100%, 67%);
+  --gradient-bg-end: hsl(241, 81%, 54%);
+  --gradient-circle-start: hsla(256, 72%, 46%, 1);
+  --gradient-circle-end: hsla(241, 72%, 46%, 0);
+
+  /* Neutrals */
+  --white: hsl(0, 0%, 100%);
+  --pale-blue: hsl(221, 100%, 96%);
+  --light-lavender: hsl(241, 100%, 89%);
+  --dark-gray-blue: hsl(224, 30%, 27%);
+}
+
+/* Import the font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+body {
+  font-family: 'Hanken Grotesk', sans-serif;
+  font-weight: 500;
+  /* default weight */
+  background-color: var(--light-lavender);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+.custom-container {
+  width: 1000px;
+  height: 700px;
+   border-radius: 50px;
+  background-color: var(--white); /* just so you can see it */
+  margin: 0 auto;
+  font-family: 'Hanken Grotesk',;
+}
+.right-section {
+  float: left;
+  width: 500px;
+height: 700px;
+border-radius: 20px;
+  background-color: var(--gradient-bg-start); /* just so you can see it */
+  text-align: center;
+  font-family: 'Hanken Grotesk',;
+}
+.result{
+  color: var(--pale-blue);
+  font-weight: 500;
+  padding-top: 30px;
+  font-size: 24px;
+  padding: 20px 40px;
+}
+.circle{
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background: linear-gradient(180deg, var(--gradient-circle-start) 0%, var(--gradient-circle-end) 100%);
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  color: var(--white);
+  font-size: 48px;
+  font-weight: 700;
+  line-height:24px ;
+  text-align: center;
+  justify-content: center;
+}
+.head{
+  font-size: 96px;
+  font-weight: 800;
+  margin-top: 50px;
+}
+.of{
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: -15px;
+  color: var(--pale-blue);
+}
+.great{
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--pale-blue);
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+.text{
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--pale-blue);
+  margin: 20px 40px;
+  line-height: 28px;
+  width: 250px;
+  margin: auto;
+  padding-top: 10px;
+}
+.left-section {
+  float: right;
+  width: 500px;
+  height: 700px;
+  border-radius: 20px;
+  background-color: var(--pale-blue); /* just so you can see it */
+  font-family: 'Hanken Grotesk',;
+}
+.left-section h2 {
+  text-align: left;
+  padding: 30px 40px;
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--dark-gray-blue);
+}
+.left-section .category{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+  margin: 10px 40px;
+  border-radius: 10px;
+  background-color: var(--light-lavender);
+  
+}
+.left-section .category .left{
+  display: flex;
+  align-items: center;
+}
+.left-section .category .left img{
+  margin-right: 15px;
+}
+.left-section .category .left .name{
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--dark-gray-blue);
+}
+.left-section .category .right{
+  font-size: 18px;
+  font-weight: 700;
+}
+.left-section .category .right .score{
+  color: var(--dark-gray-blue);
+}
+.left-section .category .right .out-of{
+  color: var(--dark-gray-blue);
+  opacity: 0.5;
+  margin-left: 5px;
+}
+.left-section .category.red{
+  background-color: rgba(255, 0, 0, 0.1);
+}
+.left-section .category.yellow{
+  background-color: rgb(247, 243, 199);
+}
+.left-section .category.green{
+  background-color: rgb(220, 236, 220);
+}
+.left-section .category.blue{
+  background-color: rgb(235, 235, 235);
+}
+.icon-text{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.icon{
+  padding-left: 10px;
+  padding-right: 12px;
+}
+.category-name{
+  font-size: 22px;
+  font-weight: 700px;
+}
+.points{
+  font-size: 24px;
+}
+.out-of{
+  font-size: 18px;
+  color: var(--light-lavender);
+  font-weight: bold;
+}
+
+.category.red .category-name{
+  color: var(--light-red);
+}
+.category.yellow .category-name{
+  color: var(--orangey-yellow);
+}
+.category.green .category-name{
+  color: var(--green-teal);
+}
+.category.blue .category-name{
+  color:var(--cobalt-blue)
+}
+button{
+  display: flex;
+padding: 18px 150px;
+border-radius: 30px;
+border: none;
+background-color: var(--dark-gray-blue);
+color:var(--pale-blue);
+
+margin: 0 auto;
+}
+.continue-btn{
+font-size: 18px;
+margin-top: 3px;
+}
+.cont{
+  margin-top: 40px;
+}
