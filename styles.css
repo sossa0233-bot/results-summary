@@ -211,3 +211,21 @@ margin-top: 3px;
 .cont{
   margin-top: 40px;
 }
+/* Default style for desktop */
+.container {
+  font-size: 18px;
+}
+
+/* For tablets */
+@media (max-width: 768px) {
+  .container {
+    font-size: 16px;
+  }
+}
+
+/* For mobile phones */
+@media (max-width: 480px) {
+  .container {
+    font-size: 14px;
+  }
+}
