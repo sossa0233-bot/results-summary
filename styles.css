@@ -35,8 +35,8 @@ body {
 .custom-container {
   width: 1000px;
   height: 700px;
-   border-radius: 50px;
-  background-color: var(--white); /* just so you can see it */
+  border-radius: 50px;
+  background-color: var(--pale-blue); /* just so you can see it */
   margin: 0 auto;
   font-family: 'Hanken Grotesk',;
 }
@@ -44,7 +44,7 @@ body {
   float: left;
   width: 500px;
 height: 700px;
-border-radius: 20px;
+  border-radius: 50px;
   background-color: var(--gradient-bg-start); /* just so you can see it */
   text-align: center;
   font-family: 'Hanken Grotesk',;
@@ -103,7 +103,7 @@ border-radius: 20px;
   float: right;
   width: 500px;
   height: 700px;
-  border-radius: 20px;
+  border-radius: 50px;
   background-color: var(--pale-blue); /* just so you can see it */
   font-family: 'Hanken Grotesk',;
 }
